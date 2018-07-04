@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datasets</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <a class="navbar-brand" href="#"> <img id="logo" alt="Logo" src="img/tatau-logo.svg" width="60" height="30"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/models">Models</a>
+        <a class="nav-item nav-link" href="/datasets">Datasets</a>
+        <a class="nav-item nav-link" href="/train">Training Jobs</a>
+      </div>
+    </div>
+  </nav>
+</div>
+<br>
+
+<!--Form-->
+<div class="container">
+  <div class="text-right">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tModal">
+  Create dataset
+  </button>
+  </div>
+  <br>
+  <div class="modal fade" id="tModal" role="dialog">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="tModalLabel">Create dataset</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+  <div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label for="colFormLabelSm" class="col-form-label col-form-label-sm">Name</label>
+      <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <label for="colFormLabelSm" class="col-form-label col-form-label-sm">Train dataset</label>
+        <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <label for="colFormLabelSm" class="col-form-label col-form-label-sm">Test dataset</label>
+        <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+      </div>
+
+      <div class="form-group">
+      <div class="text-right">
+      <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+      </div>
+      </form>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <!--Train info-->
+      <div class="row">
+      <div class="col-sm-4 col-md-4">
+      <div class="card bg-light mb-3" style="max-width: 22rem;">
+        <div class="card-header">Train info #B018</div>
+        <div class="card-body">
+          <p class="card-text">Status: Deployment</p>
+          <p class="card-text">Dataset: Link to dataset</p>
+          <p class="card-text">Dataset: Link to dataset</p>
+          <p class="card-text">Created: 12.00</p>
+          <p class="card-text">Created: 14.00</p>
+          <p class="card-text">Time spend: 120</p>
+          <p class="card-text">Tflops: 2f</p>
+          <p class="card-text">Workers: 3</p>
+          <p class="card-text">Epochs: 200</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-4">
+      <div class="card bg-light mb-3" style="max-width: 22rem;">
+        <div class="card-header">Train info #A138</div>
+        <div class="card-body">
+          <p class="card-text">Status: Deployment</p>
+          <p class="card-text">Dataset: Link to dataset</p>
+          <p class="card-text">Dataset: Link to dataset</p>
+          <p class="card-text">Created: 12.00</p>
+          <p class="card-text">Created: 14.00</p>
+          <p class="card-text">Time spend: 120</p>
+          <p class="card-text">Tflops: 2f</p>
+          <p class="card-text">Workers: 3</p>
+          <p class="card-text">Epochs: 200</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-4">
+      <div class="card bg-light mb-3" style="max-width: 22rem;">
+        <div class="card-header">Train info #C438</div>
+        <div class="card-body">
+          <p class="card-text">Status: Deployment</p>
+          <p class="card-text">Dataset: Link to dataset</p>
+          <p class="card-text">Dataset: Link to dataset</p>
+          <p class="card-text">Created: 12.00</p>
+          <p class="card-text">Created: 14.00</p>
+          <p class="card-text">Time spend: 120</p>
+          <p class="card-text">Tflops: 2f</p>
+          <p class="card-text">Workers: 3</p>
+          <p class="card-text">Epochs: 200</p>
+        </div>
+      </div>
+      </div>
+
+      </div>
+      <!--Train info End-->
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
